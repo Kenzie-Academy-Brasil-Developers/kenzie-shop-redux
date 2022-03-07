@@ -1,23 +1,13 @@
-import { useEffect, useState } from 'react';
-import api from './services/api';
+import Routes from "./routes";
+import GlobalStyle from './styles/global'
+
 
 function App() {
 
-  const [teste, setTeste] = useState([])
-
-  useEffect(() => {
-    const teste = () => {
-      api.get('/products/')
-      .then(res => setTeste(res.data))
-    } 
-
-    teste()
-  }, [])
-
-  console.log(teste)
   return (
     <>
-      OI
+     <Routes />
+     <GlobalStyle />
     </>
   );
 }
