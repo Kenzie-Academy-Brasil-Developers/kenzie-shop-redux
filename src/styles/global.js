@@ -9,7 +9,7 @@ export default createGlobalStyle`
         outline: 0;
     }
     body {
-        background-color: var(--grey-4);
+        width: 100%;
     }
     body, input, button {
         font-family: 'Inter', sans-serif;

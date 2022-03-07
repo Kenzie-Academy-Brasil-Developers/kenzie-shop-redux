@@ -1,8 +1,9 @@
+import {ButtonStyled} from './style'
 
 const Button = ({children, ...rest}) => {
     return (
         <>
-            <button rest={rest}>{children}</button>
+            <ButtonStyled {...rest}>{children}</ButtonStyled>
         </>
     )
 }
