@@ -4,6 +4,7 @@ import { prodctsReducerThunk } from '../../store/modules/products/thunk'
 import { addCartThunk } from '../../store/modules/cart/thunk'
 import {Container, List} from './style'
 import Button from '../Button'
+import {toast} from 'react-toastify'
 
 
 const ProductList = () => {
@@ -16,7 +17,10 @@ const ProductList = () => {
     },[dispatch])
     
     const addProduct = (id) => {
-        dispatch(addCartThunk(id))
+        dispatch(addCartThunk(id, toastMessage))
+    }
+    const toastMessage = (message) => {
+        toast.success(message)
     }
 
 

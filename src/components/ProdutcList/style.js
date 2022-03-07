@@ -12,12 +12,12 @@ export const List = styled.ul`
     display: flex;
     overflow-x: scroll;
     width: 1120px;
-    justify-content: center;
     transition: ease-out 0.5s;
 
     @media (min-width: 1024px){
         overflow-x: hidden;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     li {
